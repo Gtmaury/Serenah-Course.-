@@ -921,10 +921,13 @@ p {
 }
 
 .puntos-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.puntos-info {
+    max-width: 800px;
 }
 
 .puntos-tag {
