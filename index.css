@@ -1269,8 +1269,8 @@ p {
     color: var(--text-muted);
 }
 
-/* Vox Beauty Special Highlight */
-.vox-beauty-highlight {
+/* Box Beauty Special Highlight */
+.box-beauty-highlight {
     background: linear-gradient(135deg, rgba(223,186,115,0.08) 0%, rgba(10,10,10,0.8) 100%);
     border: 2px solid var(--gold-primary);
     border-radius: 8px;
@@ -1282,7 +1282,7 @@ p {
     position: relative;
 }
 
-.vox-badge {
+.box-badge {
     position: absolute;
     top: -15px;
     left: 50%;
@@ -1298,13 +1298,13 @@ p {
     box-shadow: var(--gold-glow);
 }
 
-.vox-title {
+.box-title {
     font-size: 1.8rem;
     margin-top: 1rem;
     margin-bottom: 1.2rem;
 }
 
-.vox-text {
+.box-text {
     font-size: 0.95rem;
     color: var(--text-light);
     line-height: 1.7;
@@ -1900,7 +1900,7 @@ p {
         padding: 2rem 1.5rem;
     }
     
-    .vox-beauty-highlight {
+    .box-beauty-highlight {
         padding: 2.5rem 1.5rem;
     }
 }
