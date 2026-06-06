@@ -181,7 +181,6 @@ p {
     font-size: 1rem;
 }
 
-/* Interactive CTAs */
 .cta-button {
     display: inline-block;
     padding: 1rem 2.2rem;
@@ -197,6 +196,25 @@ p {
     box-shadow: var(--gold-glow);
     transition: var(--transition-medium);
     text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.35) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: buttonShine 4s infinite ease-in-out;
 }
 
 .cta-button:hover {
@@ -307,10 +325,28 @@ p {
     letter-spacing: 0.05em;
     color: var(--text-muted);
     text-transform: uppercase;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color var(--transition-fast);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: var(--gold-gradient);
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .nav-item:hover {
     color: var(--gold-primary);
+}
+
+.nav-item:hover::after {
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -827,8 +863,14 @@ p {
     background: var(--bg-card);
     border: 1px solid var(--border-glass);
     border-radius: 8px;
-    transition: var(--transition-medium);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color var(--transition-medium), box-shadow var(--transition-medium);
     box-shadow: var(--card-shadow);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px) scale(1.025);
+    border-color: var(--gold-primary);
+    box-shadow: 0 12px 30px rgba(223, 186, 115, 0.18);
 }
 
 .timeline-item.left .timeline-content {
@@ -1280,6 +1322,12 @@ p {
     margin: 0 auto;
     box-shadow: var(--gold-glow);
     position: relative;
+    animation: borderGlowPulse 4s infinite ease-in-out;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.box-beauty-highlight:hover {
+    transform: scale(1.015) translateY(-3px);
 }
 
 .box-badge {
@@ -1571,6 +1619,25 @@ p {
     transition: var(--transition-medium);
     text-transform: uppercase;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.whatsapp-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.35) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: buttonShine 4.5s infinite ease-in-out;
 }
 
 .whatsapp-btn:hover {
@@ -1703,6 +1770,27 @@ p {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes buttonShine {
+    0% { left: -100%; }
+    20% { left: 150%; }
+    100% { left: 150%; }
+}
+
+@keyframes borderGlowPulse {
+    0% {
+        box-shadow: 0 0 15px rgba(223, 186, 115, 0.25), inset 0 0 15px rgba(223, 186, 115, 0.05);
+        border-color: rgba(223, 186, 115, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(223, 186, 115, 0.5), inset 0 0 25px rgba(223, 186, 115, 0.15);
+        border-color: rgba(223, 186, 115, 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(223, 186, 115, 0.25), inset 0 0 15px rgba(223, 186, 115, 0.05);
+        border-color: rgba(223, 186, 115, 0.7);
+    }
 }
 
 /* PDF Download Styles */
