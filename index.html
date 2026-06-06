@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Class 21 de Junio - Beauty Words Cup 2026. La experiencia de belleza más innovadora de Valencia con Anna Garcia. Solo 10 cupos.">
+    <title>Master Class 21 de Junio - Beauty Words Cup 2026</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playball&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Canvas for Floating Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <span class="logo-gold">BEAUTY</span> <span class="logo-white">WORDS CUP</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#concepto" class="nav-item">Concepto</a>
+                <a href="#pensum" class="nav-item">Temario</a>
+                <a href="#cronograma" class="nav-item">Cronograma</a>
+                <a href="#puntos" class="nav-item">Dinámica</a>
+                <a href="#premios" class="nav-item">Premios</a>
+                <a href="#instructora" class="nav-item">Instructora</a>
+            </nav>
+            <a href="#registro" class="cta-button-nav">Reservar Lugar</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="tagline-badge animate-fade-in-up">
+                        <span class="pulse-dot"></span> 21 DE JUNIO | VALENCIA, VENEZUELA
+                    </div>
+                    <h1 class="hero-title animate-fade-in-up delay-1">
+                        MASTER CLASS <br>
+                        <span class="gold-text">BEAUTY WORDS CUP 2026</span>
+                    </h1>
+                    <p class="hero-subtitle animate-fade-in-up delay-2">
+                        Perfecciona tu arte con las técnicas más avanzadas y exclusivas del año de la mano de <span class="white-text font-bold">Anna Garcia</span>.
+                    </p>
+                    
+                    <!-- Countdown Timer Widget -->
+                    <div class="countdown-widget animate-fade-in-up delay-3">
+                        <p class="countdown-label">¡ÚNICAMENTE 10 CUPOS DISPONIBLES!</p>
+                        <div class="countdown-timer">
+                            <div class="timer-segment">
+                                <span class="timer-value" id="days">00</span>
+                                <span class="timer-unit">Días</span>
+                            </div>
+                            <div class="timer-segment">
+                                <span class="timer-value" id="hours">00</span>
+                                <span class="timer-unit">Horas</span>
+                            </div>
+                            <div class="timer-segment">
+                                <span class="timer-value" id="minutes">00</span>
+                                <span class="timer-unit">Min</span>
+                            </div>
+                            <div class="timer-segment">
+                                <span class="timer-value" id="seconds">00</span>
+                                <span class="timer-unit">Seg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-ctas animate-fade-in-up delay-4">
+                        <a href="#registro" class="cta-button gold-glow">Quiero Inscribirme Ahora</a>
+                        <a href="MasterClass_Beauty_Words_Cup_2026.pdf" download class="cta-secondary">Descargar Temario PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image with masked gradient overlay -->
+                <div class="hero-image-wrapper animate-fade-in delay-2">
+                    <div class="instructor-hero-frame">
+                        <img src="instructor-profile-1.jpg" alt="Anna Garcia Instructor Beauty Words Cup" class="hero-instructor-img">
+                        <div class="hero-img-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#concepto" class="scroll-indicator">
+                <span class="scroll-text">Descubre la Experiencia</span>
+                <span class="scroll-arrow">↓</span>
+            </a>
+        </section>
+
+        <!-- Concept Banner (Eslogan) -->
+        <section class="concepto-section" id="concepto">
+            <div class="container">
+                <div class="concepto-card scroll-reveal">
+                    <div class="decorative-accent gold-top-left"></div>
+                    <div class="decorative-accent gold-bottom-right"></div>
+                    <span class="concepto-tag">EL CONCEPTO</span>
+                    <h2 class="concepto-quote">
+                        "No es un taller, No es una clase. <br>
+                        Es la <span class="gold-text playball-font">Experiencia de Belleza</span> más innovadora de Valencia."
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pensum Section (Bloque 1 Temas) -->
+        <section class="pensum-section" id="pensum">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">¿QUÉ APRENDERÁS?</span>
+                    <h2 class="section-title">PENSUM DEL EVENTO</h2>
+                    <div class="gold-line"></div>
+                    <p class="section-desc">Diseñado para elevar tu nivel profesional y dominar las tendencias clave del 2026.</p>
+                    <a href="MasterClass_Beauty_Words_Cup_2026.pdf" download class="pensum-download-link">Descargar Pensum Completo (PDF)</a>
+                </div>
+                
+                <div class="pensum-grid">
+                    <!-- Tema 1 -->
+                    <div class="pensum-card scroll-reveal">
+                        <div class="card-icon-wrapper">
+                            <!-- SVG Eyeliner Icon -->
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 16H13V18H11V16ZM11 6H13V14H11V6Z" fill="url(#gold-grad)"/>
+                                <defs>
+                                    <linearGradient id="gold-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#DFBA73"/>
+                                        <stop offset="100%" stop-color="#9E7D3B"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Delineados Modernos 2026</h3>
+                        <p class="card-text">Perfecciona simetrías y estilos vanguardistas. Técnicas gráficas, foxy eyes y acabados resistentes que definen el look del año.</p>
+                        <div class="card-badge">TENDENCIA MÁXIMA</div>
+                    </div>
+
+                    <!-- Tema 2 -->
+                    <div class="pensum-card scroll-reveal delay-1">
+                        <div class="card-icon-wrapper">
+                            <!-- SVG Makeup Brush Icon -->
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 13.08 2.18 14.12 2.5 15.09L5.41 12.18C5.15 11.5 5 10.77 5 10C5 6.13 8.13 3 12 3C15.87 3 19 6.13 19 10C19 13.87 15.87 17 12 17C11.23 17 10.5 16.85 9.82 16.59L6.91 19.5C7.88 19.82 8.92 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 2 12 2Z" fill="url(#gold-grad)"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Maquillaje Social</h3>
+                        <p class="card-text">Diseño de looks para eventos sociales. Adaptabilidad a la luz, combinación de paletas y técnicas de difuminado premium.</p>
+                        <div class="card-badge">ARTE SOCIAL</div>
+                    </div>
+
+                    <!-- Tema 3 -->
+                    <div class="pensum-card scroll-reveal delay-2">
+                        <div class="card-icon-wrapper">
+                            <!-- SVG Skin Drop Icon -->
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.69L6.53 8.16C4.85 9.84 4 12.06 4 14.28C4 18.54 7.46 22 12 22C16.54 22 20 18.54 20 14.28C20 12.06 19.15 9.84 17.47 8.16L12 2.69ZM12 20C8.69 20 6 17.31 6 14C6 12.56 6.56 11.12 7.69 10L12 5.69L16.31 10C17.44 11.12 18 12.56 18 14C18 17.31 15.31 20 12 20Z" fill="url(#gold-grad)"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Técnicas en Pieles</h3>
+                        <p class="card-text">Domina la preparación profunda, correcciones cromáticas, pieles blindadas de alta resistencia y acabados con brillo radiante natural.</p>
+                        <div class="card-badge">PIEL BLINDADA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Chronogram (Cronograma) -->
+        <section class="cronograma-section" id="cronograma">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">PASA A PASO</span>
+                    <h2 class="section-title">CRONOGRAMA DEL EVENTO</h2>
+                    <div class="gold-line"></div>
+                    <p class="section-desc">Un día intensivo planificado al detalle para maximizar tu aprendizaje y disfrute.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-progress-bar">
+                        <div class="timeline-progress-fill" id="timeline-fill"></div>
+                    </div>
+                    
+                    <!-- Item 1 -->
+                    <div class="timeline-item left scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">9:00 AM</span>
+                            <h3 class="timeline-event-title">Registro y Credenciales</h3>
+                            <p class="timeline-event-desc">Llegada puntual para la entrega oficial de credenciales, ubicación de puestos y bienvenida formal a la sede del Beauty Words Cup.</p>
+                            <span class="timeline-badge-info gold-border">PUNTUAL</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item right scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">9:30 AM</span>
+                            <h3 class="timeline-event-title">Bienvenida Oficial</h3>
+                            <p class="timeline-event-desc">Presentación de las instructoras, inauguración oficial de la experiencia 2026 y explicación de la dinámica del evento.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item left scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">10:00 AM</span>
+                            <h3 class="timeline-event-title">Tendencia de Maquillaje 2026</h3>
+                            <p class="timeline-event-desc">Bloque teórico y demostrativo de los estándares que dominan las pasarelas y el sector comercial de la belleza este año.</p>
+                            <span class="timeline-badge-info">TEORÍA</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item right scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">11:00 AM</span>
+                            <h3 class="timeline-event-title">Master Class: Delineados Modernos</h3>
+                            <p class="timeline-event-desc">Demostración en vivo en modelo sobre delineados gráficos, foxy, asimetrías y técnicas de difuminado y fijación extrema.</p>
+                            <span class="timeline-badge-info gold-border">BLOQUE PRÁCTICO</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="timeline-item left scroll-revealHighlight">
+                        <div class="timeline-dot special-dot"></div>
+                        <div class="timeline-content special-card">
+                            <span class="time-tag special-tag">12:30 PM</span>
+                            <h3 class="timeline-event-title">Coffee Break Mundialista</h3>
+                            <p class="timeline-event-desc">Espacio de descanso, networking y catering temático mundialista. Una oportunidad de oro para conectar y compartir experiencias.</p>
+                            <span class="timeline-badge-info special-badge">CATERING & NETWORKING</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="timeline-item right scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">1:00 PM</span>
+                            <h3 class="timeline-event-title">Reto Maquillaje (Práctica + Obsequio)</h3>
+                            <p class="timeline-event-desc">Bloque práctico interactivo. Cada participante aplicará lo aprendido en el reto especial para ganar puntos. Obsequio asegurado para todas.</p>
+                            <div class="timer-preview-box">
+                                <span class="clock-icon">⏱️</span> Regla: 10 minutos cronometrados para el delineado.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="timeline-item left scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">3:00 PM</span>
+                            <h3 class="timeline-event-title">Sesión de Fotografía Profesional</h3>
+                            <p class="timeline-event-desc">Captura del trabajo final por un fotógrafo profesional de moda. Llévate retratos editoriales de alta calidad para lucir en tu portafolio.</p>
+                            <span class="timeline-badge-info">PORTAFOLIO</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="timeline-item right scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="time-tag">4:00 PM</span>
+                            <h3 class="timeline-event-title">Premiación & Clausura</h3>
+                            <p class="timeline-event-desc">Conteo de la puntuación acumulada durante el día. Entrega de certificados de participación y premios a la participante destacada.</p>
+                            <span class="timeline-badge-info gold-border">VOX BEAUTY RECONOCIMIENTO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Points Game & Challenge (Dinámica de Puntos) -->
+        <section class="puntos-section" id="puntos">
+            <div class="container">
+                <div class="puntos-wrapper">
+                    <div class="puntos-info scroll-reveal">
+                        <span class="puntos-tag">JUEGA Y GANA</span>
+                        <h2 class="puntos-title">DINÁMICA DE PUNTOS ACUMULABLES</h2>
+                        <div class="gold-line-left"></div>
+                        <p class="puntos-desc">
+                            En el Beauty Words Cup premiamos tu destreza, pasión y compromiso. Al ingresar al evento, acumulas puntos para competir por el **Reconocimiento Vox Beauty** a la participante destacada.
+                        </p>
+                        
+                        <div class="reglas-lista">
+                            <div class="regla-item">
+                                <div class="regla-points">+20 PTS</div>
+                                <div class="regla-info">
+                                    <h4>Respuestas Correctas</h4>
+                                    <p>Demuestra tu conocimiento técnico durante los bloques interactivos.</p>
+                                </div>
+                            </div>
+                            <div class="regla-item">
+                                <div class="regla-points">+15 PTS</div>
+                                <div class="regla-info">
+                                    <h4>Participación Activa</h4>
+                                    <p>Interacciones y preguntas de valor durante la teoría.</p>
+                                </div>
+                            </div>
+                            <div class="regla-item">
+                                <div class="regla-points">+50 PTS</div>
+                                <div class="regla-info">
+                                    <h4>Reto de Delineado</h4>
+                                    <p>Regla del Reto: Solo tendrás 10 minutos cronometrados para lograr un delineado de impacto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Points Simulator Widget -->
+                    <div class="puntos-simulator scroll-reveal delay-1">
+                        <div class="simulator-card">
+                            <h3 class="simulator-header">Simulador de Puntos Vox Beauty</h3>
+                            <p class="simulator-intro">Marca tus logros estimados para ver tu rango y premios proyectados:</p>
+                            
+                            <div class="simulator-form">
+                                <label class="sim-checkbox-container">
+                                    <input type="checkbox" id="chk-preguntas" data-points="20">
+                                    <span class="checkmark"></span>
+                                    <span class="sim-label-text">Responder preguntas teóricas (+20 pts)</span>
+                                </label>
+                                
+                                <label class="sim-checkbox-container">
+                                    <input type="checkbox" id="chk-participacion" data-points="15">
+                                    <span class="checkmark"></span>
+                                    <span class="sim-label-text">Participar activamente en clase (+15 pts)</span>
+                                </label>
+                                
+                                <label class="sim-checkbox-container">
+                                    <input type="checkbox" id="chk-reto" data-points="50">
+                                    <span class="checkmark"></span>
+                                    <span class="sim-label-text">Completar el reto de delineado en 10 min (+50 pts)</span>
+                                </label>
+                            </div>
+
+                            <div class="simulator-result">
+                                <div class="score-display">
+                                    <span class="score-num" id="current-score">0</span>
+                                    <span class="score-label">PUNTOS</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" id="score-progress" style="width: 0%;"></div>
+                                </div>
+                                <div class="rank-result">
+                                    Rango Proyectado: <span id="rank-name" class="gold-text">Asistente Estándar</span>
+                                </div>
+                                <div class="unlocked-box">
+                                    <h4 class="unlocked-title">Premios que podrías ganar:</h4>
+                                    <ul class="unlocked-list" id="unlocked-prizes-list">
+                                        <li class="locked-item">Completa actividades para ver los premios desbloqueables.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prizes Section -->
+        <section class="premios-section" id="premios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">LOS GALARDONES</span>
+                    <h2 class="section-title">PREMIOS Y RECONOCIMIENTO</h2>
+                    <div class="gold-line"></div>
+                    <p class="section-desc">Reconocemos tu talento con una selección de premios exclusivos valorados en cientos de dólares.</p>
+                </div>
+
+                <div class="premios-grid">
+                    <!-- Premio 1 -->
+                    <div class="premio-card scroll-reveal">
+                        <div class="premio-badge">1</div>
+                        <h3 class="premio-title">Kit Obsequio</h3>
+                        <p class="premio-text">Kit completo de maquillaje profesional de marcas patrocinadoras para tus próximas creaciones.</p>
+                    </div>
+                    <!-- Premio 2 -->
+                    <div class="premio-card scroll-reveal delay-1">
+                        <div class="premio-badge">2</div>
+                        <h3 class="premio-title">Certificado Especial</h3>
+                        <p class="premio-text">Acreditación oficial del Beauty Words Cup 2026 que respalda tu formación de alto nivel.</p>
+                    </div>
+                    <!-- Premio 3 -->
+                    <div class="premio-card scroll-reveal delay-2">
+                        <div class="premio-badge">3</div>
+                        <h3 class="premio-title">Sesión Fotográfica</h3>
+                        <p class="premio-text">Sesión editorial profesional in situ para retratar tu trabajo final con calidad de revista.</p>
+                    </div>
+                    <!-- Premio 4 -->
+                    <div class="premio-card scroll-reveal">
+                        <div class="premio-badge">4</div>
+                        <h3 class="premio-title">Productos Patrocinados</h3>
+                        <p class="premio-text">Lotes exclusivos de cosméticos de alta gama listados en los patrocinadores oficiales.</p>
+                    </div>
+                    <!-- Premio 5 -->
+                    <div class="premio-card scroll-reveal delay-1">
+                        <div class="premio-badge">5</div>
+                        <h3 class="premio-title">Cupón Especial</h3>
+                        <p class="premio-text">Cupón de descuento directo del 30% aplicable para tu próxima formación avanzada con Anna Garcia.</p>
+                    </div>
+                </div>
+
+                <!-- Vox Beauty Box Highlight -->
+                <div class="vox-beauty-highlight scroll-reveal">
+                    <div class="vox-badge">RECONOCIMIENTO VOX BEAUTY</div>
+                    <h3 class="vox-title">El Gran Galardón de la Jornada</h3>
+                    <p class="vox-text">
+                        Aquella participante que acumule el mayor número de puntos y destaque en simetría, limpieza y técnica durante el **Reto de Delineado de 10 min** recibirá la mención de honor **Vox Beauty**, con visibilidad en las redes de Serena Salon y un kit especial premium extra.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Profile Section (Anna Garcia) -->
+        <section class="instructora-section" id="instructora">
+            <div class="container">
+                <div class="instructora-wrapper">
+                    <!-- Photo Column -->
+                    <div class="instructora-photo scroll-reveal">
+                        <div class="photo-border-effect">
+                            <img src="instructor-profile-2.jpg" alt="Anna Garcia Tweezer Lash Artist" class="profile-img">
+                            <div class="photo-glow-back"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bio Column -->
+                    <div class="instructora-bio scroll-reveal delay-1">
+                        <span class="bio-subtitle">TU INSTRUCTORA</span>
+                        <h2 class="bio-title">ANNA GARCIA</h2>
+                        <div class="gold-line-left"></div>
+                        <p class="bio-text">
+                            Especialista galardonada y artista de maquillaje con años de trayectoria internacional en el diseño de cejas, pestañas y técnicas de alta resistencia. Anna es fundadora y mentora de técnicas que hoy en día son referentes en el sector de la belleza en Valencia.
+                        </p>
+                        <p class="bio-text">
+                            En esta Master Class, Anna comparte sin filtros los secretos que le han permitido consolidar una clientela fiel y posicionar sus marcas en el mercado de lujo. Su enfoque es práctico, estricto con los detalles y enfocado en formar profesionales líderes.
+                        </p>
+
+                        <!-- Alliance logos / text badges -->
+                        <div class="alliance-badges">
+                            <div class="alliance-badge">Organizado por @serenahsalon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="registro-section" id="registro">
+            <div class="container">
+                <div class="registro-grid">
+                    <div class="registro-text scroll-reveal">
+                        <span class="registro-subtitle">PASO FINAL</span>
+                        <h2 class="registro-title">ASEGURA TU LUGAR EN LA HISTORIA</h2>
+                        <div class="gold-line-left"></div>
+                        <p class="registro-desc">
+                            Recuerda que esta experiencia está limitada estrictamente a **10 participantes** para asegurar una asesoría uno a uno ultra personalizada. No habrá excepciones una vez completados los cupos.
+                        </p>
+                        
+                        <div class="form-benefits">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✔</span>
+                                <span>Acceso de día completo con catering incluido.</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✔</span>
+                                <span>Fotografía profesional digital para tu marca personal.</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✔</span>
+                                <span>Todos los materiales para las dinámicas prácticas.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Luxury WhatsApp Box -->
+                    <div class="registro-form-box scroll-reveal delay-1">
+                        <div class="form-header">
+                            <h3>Inscripción Directa</h3>
+                            <p>Reserva tu lugar conversando directamente con nosotros a través de WhatsApp.</p>
+                        </div>
+                        
+                        <div class="whatsapp-card-content">
+                            <div class="whatsapp-icon-bg">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.004 2C6.48 2 2.004 6.48 2.004 12C2.004 13.83 2.5 15.54 3.36 17.03L2.004 22L7.134 20.68C8.564 21.47 10.204 21.93 11.994 21.93C17.514 21.93 21.994 17.45 21.994 11.93C21.994 6.41 17.524 2 12.004 2ZM17.204 15.6C16.994 16.19 16.094 16.68 15.484 16.8C14.994 16.89 14.354 16.95 12.224 16.07C9.514 14.95 7.764 12.19 7.624 12.01C7.494 11.83 6.554 10.58 6.554 9.29C6.554 8 7.214 7.35 7.494 7.07C7.714 6.85 8.074 6.74 8.394 6.74C8.494 6.74 8.594 6.74 8.684 6.75C8.944 6.76 9.074 6.78 9.254 7.21C9.474 7.75 10.014 9.07 10.084 9.21C10.154 9.35 10.224 9.54 10.124 9.73C10.034 9.92 9.954 10.02 9.814 10.18C9.674 10.34 9.544 10.47 9.404 10.63C9.274 10.78 9.124 10.94 9.294 11.23C9.464 11.52 10.054 12.48 10.924 13.25C12.054 14.25 12.974 14.57 13.294 14.7C13.594 14.83 13.774 14.8 13.944 14.6C14.154 14.36 14.854 13.54 15.084 13.2C15.314 12.86 15.544 12.91 15.864 13.03C16.184 13.15 17.894 14 18.244 14.17C18.594 14.34 18.824 14.42 18.914 14.57C19.004 14.72 19.004 15.42 18.794 16C18.584 16.58 17.414 15.01 17.204 15.6Z" fill="#25D366"/>
+                                </svg>
+                            </div>
+                            <div class="whatsapp-number">+58 414-0342245</div>
+                            <a href="https://api.whatsapp.com/send?phone=584140342245&text=%C2%A1Hola%20Serena%20Salon%21%20Me%20gustar%C3%ADa%20inscribirme%20y%20reservar%20mi%20cupo%20para%20la%20Master%20Class%20del%2021%20de%20Junio%20-%20Beauty%20Words%20Cup%202026.%20%C2%A1Por%20favor%2C%20conf%C3%ADrmenme%20disponibilidad%20y%20detalles%20de%20pago%21" target="_blank" class="whatsapp-btn gold-glow">
+                                Chatear e Inscribirse por WhatsApp
+                            </a>
+                        </div>
+                        
+                        <p class="form-note">
+                            *Al hacer clic serás redirigida directamente a nuestro WhatsApp oficial para coordinar tu pago y confirmar tu cupo (1 de 10).
+                        </p>
+                        <div class="form-pdf-download-container">
+                            <a href="MasterClass_Beauty_Words_Cup_2026.pdf" download class="form-pdf-link">📥 Descargar Cronograma Oficial (PDF)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-col">
+                    <h3>BEAUTY WORDS CUP 2026</h3>
+                    <p class="footer-tagline">El pináculo del arte en maquillaje y delineados en Valencia.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>ORGANIZACIÓN</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/serenahsalon" target="_blank">@serenahsalon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-col">
+                    <h4>TELÉFONO DE CONTACTO</h4>
+                    <ul>
+                        <li>0414 034-2245</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Beauty Words Cup. Todos los derechos reservados. Valencia, Edo. Carabobo, Venezuela.</p>
+                <p class="creator-signature">Diseño y Desarrollo Web: <a href="https://www.instagram.com/gtmaua?igsh=MTZhYzhuMmdjN21tMQ%3D%3D&utm_source=qr" target="_blank" class="creator-link">Creado por Mauricio Gonzalez →</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js" defer></script>
+</body>
+</html>
