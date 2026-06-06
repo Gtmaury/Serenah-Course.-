@@ -1360,17 +1360,23 @@ p {
 }
 
 .box-title {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-family: var(--font-serif);
+    letter-spacing: 0.05em;
+    color: #ffffff;
 }
 
 .box-text {
-    font-size: 0.95rem;
-    color: var(--text-light);
-    line-height: 1.7;
-    max-width: 650px;
-    margin: 0 auto;
+    font-size: 1.8rem;
+    color: var(--gold-primary);
+    font-family: var(--font-serif);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin: 0.5rem auto 0 auto;
+    line-height: 1.2;
 }
 
 /* ==========================================================================
@@ -2022,5 +2028,16 @@ p {
     
     .box-beauty-highlight {
         padding: 2.5rem 1.5rem;
+    }
+    
+    .box-title {
+        font-size: 1.8rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .box-text {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
     }
 }
