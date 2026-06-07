@@ -1994,17 +1994,18 @@ p {
     }
     
     .header-container {
-        padding: 1rem;
+        padding: 0.8rem 0.75rem;
     }
 
     .logo-link {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         white-space: nowrap;
     }
     
     .cta-button-nav {
-        padding: 0.4rem 0.9rem;
-        font-size: 0.75rem;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.7rem;
+        white-space: nowrap;
     }
     
     .hero-title {
